@@ -1,0 +1,18 @@
+{#-
+    This file was automatically generated - do not edit
+  -#}
+  {% extends "base.html" %}
+  {% block extrahead %}
+    <link rel="stylesheet" href="{{ 'overrides/assets/stylesheets/style.css' | url }}">
+    <link rel="stylesheet" href="{{ 'overrides/assets/stylesheets/evo-calendar.min.css' | url }}">
+    <link rel="stylesheet" href="{{ 'overrides/assets/stylesheets/evo-calendar.midnight-blue.min.css' | url }}">
+  {% endblock %}
+  {% block announce %}
+  {% endblock %}
+  {% block content %}
+    {% include "overrides/partials/content.html" %}
+  {% endblock %}
+  {% block scripts %}
+    {{ super() }}
+    <script src="{{ 'overrides/assets/javascripts/evo-calendar.min.js' | url }}"></script>
+  {% endblock %}
